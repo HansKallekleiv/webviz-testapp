@@ -1,3 +1,3 @@
-FROM webvizstandardtest.azurecr.io/webviz_base7:latest
+FROM webviz/base_image:latest
 COPY . dash_app
 COPY --chown=appuser . dash_app
