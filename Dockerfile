@@ -1,6 +1,3 @@
-FROM webviz/base_image
-
+FROM webvizstandardtest.azurecr.io/webviz_base7:latest
 COPY . dash_app
-RUN chmod -R 660 dash_app
-ENV LISTEN_PORT=80
-EXPOSE 80
+COPY --chown=appuser . dash_app
